@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Quiet Fifteen: A 15-Year Policy, Measured</title>
+<meta name="description" content="A fifteen-year guaranteed savings policy, compared with a fixed deposit, bonds, the Nifty 50, and gold.">
+<meta property="og:title" content="The Quiet Fifteen: A 15-Year Policy, Measured">
+<meta property="og:description" content="A fifteen-year guaranteed savings policy, compared with a fixed deposit, bonds, the Nifty 50, and gold.">
+<meta property="og:image" content="https://shivam2014.github.io/quiet-fifteen/share-card.jpg">
+<meta property="og:url" content="https://shivam2014.github.io/quiet-fifteen/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3EEE3;
+  --paper-2:#EBE4D6;
+  --paper-3:#E3DACA;
+  --ink:#121A17;
+  --ink-soft:#3D4A44;
+  --muted:#7B847D;
+  --gold:#A97C3F;
+  --gold-2:#C9A46A;
+  --gold-3:#E0C89B;
+  --green:#1E4438;
+  --terra:#A9503A;
+  --blue:#4C6473;
+  --sage:#7E8A80;
+  --line:rgba(18,26,23,.13);
+  --line-strong:rgba(18,26,23,.24);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+::selection{background:var(--gold-2);color:#101A16}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 48px}
+.narrow{max-width:860px}
+
+/* ---------- scroll progress ---------- */
+#progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-3));z-index:100;transition:width .1s linear}
+
+/* ---------- type ---------- */
+.eyebrow{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-family:var(--serif);font-weight:300;letter-spacing:-.015em}
+h2{font-size:clamp(34px,4.3vw,58px);line-height:1.06}
+h3{font-size:26px;line-height:1.25}
+.lead{font-family:var(--serif);font-weight:300;font-size:clamp(21px,2.2vw,27px);line-height:1.42;color:var(--ink);max-width:820px}
+.body{font-size:16.5px;line-height:1.78;color:var(--ink-soft);max-width:720px}
+.body p+p{margin-top:1.1em}
+.small{font-size:13px;line-height:1.65;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums lining-nums}
+
+/* ---------- cover ---------- */
+.cover{
+  position:relative;min-height:100vh;background:#0F1A16;color:#F3EEE3;
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:42px 0 38px;overflow:hidden;
+}
+.cover:before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(1100px 620px at 78% 18%,rgba(201,164,106,.13),transparent 62%),
+    radial-gradient(900px 700px at 12% 92%,rgba(30,68,56,.55),transparent 64%);
+}
+.cover:after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+.cover .wrap{position:relative;z-index:2;width:100%}
+.cover-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding-bottom:22px;border-bottom:1px solid rgba(243,238,227,.16)}
+.cover-top .left{display:flex;gap:14px;align-items:center}
+.cover-top .mark{width:26px;height:26px;border:1px solid var(--gold-2);border-radius:50%;display:grid;place-items:center}
+.cover-top .mark:before{content:"";width:6px;height:6px;background:var(--gold-2);border-radius:50%}
+.cover-top .eyebrow{color:rgba(243,238,227,.66)}
+.cover-top .right{text-align:right;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,238,227,.5);line-height:1.8}
+.cover-main{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:end;padding:74px 0 60px}
+.cover h1{font-size:clamp(58px,8.4vw,122px);line-height:.92;font-weight:300;color:#F6F0E4}
+.cover h1 em{font-style:italic;color:var(--gold-2);font-weight:300}
+.cover .deck{margin-top:30px;max-width:470px;font-size:16px;line-height:1.75;color:rgba(243,238,227,.72)}
+.cover-number{text-align:right}
+.cover-number .kicker{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-2);margin-bottom:12px}
+.cover-number .big{font-family:var(--serif);font-weight:300;font-size:clamp(54px,7vw,104px);line-height:.95;letter-spacing:-.04em;color:#E7CFA4}
+.cover-number .big .cur{font-size:.48em;vertical-align:.42em;margin-right:.05em;color:var(--gold-2)}
+.cover-number .caption{margin-top:16px;font-size:12px;letter-spacing:.08em;color:rgba(243,238,227,.55)}
+.cover-number .rule{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,164,106,.55));margin:22px 0 0 0}
+.cover-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;padding-top:24px;border-top:1px solid rgba(243,238,227,.16)}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{border:1px solid rgba(201,164,106,.35);border-radius:999px;padding:7px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(243,238,227,.78)}
+.chip b{color:var(--gold-3);font-weight:500}
+.cover-bottom .fine{font-size:11px;color:rgba(243,238,227,.42);letter-spacing:.06em;text-align:right;line-height:1.8}
+.cover-curve{position:absolute;right:-4%;bottom:-2%;width:62%;opacity:.22;z-index:1;pointer-events:none}
+
+/* ---------- sections ---------- */
+.section{padding:110px 0;border-top:1px solid var(--line);position:relative}
+.section.tight{padding:80px 0}
+.section.dark{background:#101A16;color:#F3EEE3;border-top:none;--ink:#F3EEE3;--ink-soft:#C6C1B4;--muted:#909B93;--line:rgba(243,238,227,.15);--line-strong:rgba(243,238,227,.26)}
+.section.dark .body{color:#C6C1B4}
+.chapter{display:flex;align-items:center;gap:16px;margin-bottom:46px}
+.chapter .n{font-family:var(--serif);font-size:14px;letter-spacing:.16em;color:var(--gold);white-space:nowrap}
+.chapter .r{height:1px;flex:1;background:var(--line)}
+.chapter .t{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.section-head{display:grid;grid-template-columns:1.32fr .68fr;gap:64px;align-items:start;margin-bottom:44px}
+.section-head .aside{padding-top:8px}
+.section-head .aside p{font-size:14px;line-height:1.8;color:var(--muted);max-width:340px}
+
+/* ---------- stats ---------- */
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-strong);margin-top:56px}
+.stat{padding:26px 28px 22px 0;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none;padding-right:0}
+.stat .k{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.stat .v{font-family:var(--serif);font-size:clamp(30px,3.4vw,44px);line-height:1;letter-spacing:-.02em}
+.stat .v .u{font-size:.55em;color:var(--muted);letter-spacing:0}
+.stat .n{margin-top:8px;font-size:12px;color:var(--muted)}
+
+/* ---------- chart shells ---------- */
+.chart-shell{border:1px solid var(--line);background:rgba(255,255,255,.22);padding:26px 24px 18px;position:relative;overflow:hidden}
+.section.dark .chart-shell{background:rgba(255,255,255,.025);border-color:rgba(243,238,227,.16)}
+.chart-head{display:flex;justify-content:space-between;align-items:baseline;gap:18px;margin-bottom:14px;flex-wrap:wrap}
+.chart-title{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.swatch{width:18px;height:2px;display:inline-block;border-radius:2px}
+.caption{margin-top:14px;font-size:12px;color:var(--muted);line-height:1.7;max-width:820px}
+
+/* ---------- timeline ---------- */
+.timeline-wrap{margin-top:54px}
+
+/* ---------- race ---------- */
+.race{display:flex;flex-direction:column;border-top:1px solid var(--line-strong)}
+.race-row{display:grid;grid-template-columns:154px 1fr 104px 128px;gap:20px;align-items:center;padding:19px 0;border-bottom:1px solid var(--line);position:relative}
+.race-row.is-policy{background:linear-gradient(90deg,rgba(201,164,106,.13),rgba(201,164,106,.02));margin:0 -20px;padding-left:20px;padding-right:20px;border-left:2px solid var(--gold)}
+.race-name{font-size:13px;letter-spacing:.02em;display:flex;align-items:center;gap:9px}
+.race-name .dot{width:7px;height:7px;border-radius:50%;background:var(--c);flex:none}
+.race-tag{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(169,124,63,.4);padding:2px 6px;border-radius:999px}
+.race-track{height:16px;position:relative;background:rgba(18,26,23,.045);border-radius:1px;overflow:hidden}
+.section.dark .race-track{background:rgba(243,238,227,.07)}
+.race-bar{height:100%;width:0;background:var(--c);border-radius:1px;transition:width 1.15s cubic-bezier(.22,1,.36,1)}
+.race-val{font-family:var(--serif);font-size:21px;text-align:right;letter-spacing:-.01em;white-space:nowrap}
+.race-meta{font-size:11px;color:var(--muted);text-align:right;line-height:1.5}
+.race-meta b{display:block;color:var(--ink);font-weight:500}
+.race-meta span{white-space:nowrap}
+.race-note{display:flex;justify-content:space-between;gap:16px;margin-top:18px;flex-wrap:wrap}
+.toggle{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;padding:3px;gap:2px}
+.toggle button{appearance:none;border:none;background:transparent;color:var(--muted);font-family:var(--sans);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:7px 13px;border-radius:999px;cursor:pointer;transition:.2s}
+.toggle button.on{background:var(--ink);color:var(--paper)}
+.section.dark .toggle button.on{background:var(--gold-2);color:#101A16}
+
+/* ---------- verdict chips ---------- */
+.verdicts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+.v-card{border:1px solid var(--line);padding:17px 18px;background:rgba(255,255,255,.2)}
+.v-card .k{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.v-card .v{font-family:var(--serif);font-size:19px;line-height:1.2}
+.v-card.win{border-top:2px solid var(--green)}
+.v-card.loss{border-top:2px solid var(--terra)}
+.v-card.level{border-top:2px solid var(--gold)}
+
+/* ---------- dumbbell ---------- */
+.db{margin-top:8px}
+.db-row{display:grid;grid-template-columns:140px 1fr 104px;gap:18px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.db-name{font-size:13px}
+.db-track{height:26px;position:relative}
+.db-track:before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line)}
+.db-line{position:absolute;top:50%;height:2px;transform:translateY(-50%);background:var(--line-strong);border-radius:2px}
+.db-dot{position:absolute;top:50%;width:10px;height:10px;border-radius:50%;transform:translate(-50%,-50%);z-index:2}
+.db-dot.pre{background:var(--paper);border:1.5px solid var(--ink-soft)}
+.section.dark .db-dot.pre{background:#101A16;border-color:#C6C1B4}
+.db-dot.post{background:var(--c);border:1.5px solid var(--c);box-shadow:0 0 0 3px rgba(201,164,106,.12)}
+.db-val{font-family:var(--serif);font-size:19px;text-align:right;white-space:nowrap}
+.db-axis{display:grid;grid-template-columns:140px 1fr 104px;gap:18px;margin-top:10px}
+.db-axis .ticks{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);letter-spacing:.04em}
+.db-legend{display:flex;gap:20px;font-size:11px;color:var(--muted);margin-top:16px;flex-wrap:wrap}
+.db-legend span{display:inline-flex;align-items:center;gap:7px}
+.db-legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.slider-box{margin-top:28px;border:1px solid var(--line);padding:20px 22px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;background:rgba(255,255,255,.2)}
+.section.dark .slider-box{background:rgba(255,255,255,.025)}
+.slider-box .lab{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.slider-box .val{font-family:var(--serif);font-size:30px;line-height:1;color:var(--gold)}
+input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:2px;background:var(--line-strong);outline:none;margin:12px 0 4px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--gold);border:2px solid var(--paper);box-shadow:0 0 0 1px var(--gold);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--gold);border:2px solid var(--paper);cursor:pointer}
+.slider-ends{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-top:2px}
+.equiv{text-align:right}
+.equiv .v{font-family:var(--serif);font-size:clamp(30px,3.6vw,44px);line-height:1;color:var(--gold)}
+.equiv .k{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.equiv .n{font-size:11px;color:var(--muted);margin-top:7px;max-width:200px;margin-left:auto}
+
+/* ---------- real bars ---------- */
+.real-chart{display:flex;flex-direction:column;gap:0;margin-top:12px}
+.real-row{display:grid;grid-template-columns:150px 1fr 80px;gap:18px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}
+.real-name{font-size:13px}
+.real-track{height:22px;position:relative;background:rgba(18,26,23,.035)}
+.section.dark .real-track{background:rgba(243,238,227,.06)}
+.real-zero{position:absolute;top:-4px;bottom:-4px;width:1px;background:var(--line-strong)}
+.real-bar{position:absolute;top:3px;bottom:3px;border-radius:1px;transition:width 1s ease,left 1s ease}
+.real-val{font-family:var(--serif);font-size:18px;text-align:right;white-space:nowrap}
+
+/* ---------- risk ---------- */
+.risk-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start}
+.risk-cards{display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(243,238,227,.25)}
+.risk-card{padding:22px 0;border-bottom:1px solid rgba(243,238,227,.16);display:grid;grid-template-columns:34px 1fr;gap:16px}
+.risk-card .ic{width:34px;height:34px;border:1px solid rgba(201,164,106,.45);border-radius:50%;display:grid;place-items:center;color:var(--gold-2)}
+.risk-card .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-2);margin-bottom:5px}
+.risk-card .d{font-size:13px;line-height:1.7;color:#C6C1B4}
+
+/* ---------- verdict ---------- */
+.verdict-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-strong);margin-top:52px}
+.v-col{padding:30px 30px 34px 0;border-right:1px solid var(--line)}
+.v-col:last-child{border-right:none;padding-right:0}
+.v-col .k{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.v-col h3{font-size:23px;line-height:1.25;margin-bottom:14px}
+.v-col p{font-size:14px;line-height:1.8;color:var(--ink-soft)}
+.v-col ul{list-style:none;margin-top:14px}
+.v-col li{font-size:13.5px;line-height:1.65;color:var(--ink-soft);padding:9px 0;border-top:1px solid var(--line);display:flex;gap:10px}
+.v-col li:before{content:"·";color:var(--gold);flex:none}
+.pull{margin:64px 0 0;padding:38px 0 0;border-top:1px solid var(--line-strong);font-family:var(--serif);font-size:clamp(24px,3vw,38px);line-height:1.3;max-width:900px;letter-spacing:-.01em}
+.pull em{font-style:italic;color:var(--gold)}
+
+/* ---------- footer ---------- */
+.footer{background:#0F1A16;color:#F3EEE3;padding:80px 0 44px}
+.footer .eyebrow{color:rgba(243,238,227,.55)}
+.footer h2{font-size:clamp(30px,3.6vw,44px);color:#F6F0E4;margin-bottom:26px}
+.footer .body{color:#BDB8AB;font-size:14px;line-height:1.8;max-width:760px}
+.method{display:grid;grid-template-columns:220px 1fr;gap:22px;padding:15px 0;border-top:1px solid rgba(243,238,227,.13);font-size:12.5px;line-height:1.7}
+.method .k{color:var(--gold-3);letter-spacing:.04em}
+.method .v{color:#BDB8AB}
+.sources{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:8px 40px;font-size:11.5px;line-height:1.7;color:#8F9A92}
+.sources span{display:block}
+.disclaimer{margin-top:40px;padding-top:22px;border-top:1px solid rgba(243,238,227,.13);font-size:10.5px;line-height:1.75;color:#7F8A82;max-width:900px}
+.footer-base{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:30px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#6E7A72}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.22,1,.36,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}
+.reveal.d2{transition-delay:.16s}
+.reveal.d3{transition-delay:.24s}
+
+/* ---------- tooltip ---------- */
+.tip{position:absolute;pointer-events:none;background:#101A16;color:#F3EEE3;border:1px solid rgba(201,164,106,.35);padding:11px 13px;font-size:11px;line-height:1.65;z-index:20;min-width:150px;opacity:0;transition:opacity .12s;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.tip b{color:var(--gold-3);font-weight:500}
+.tip .yr{font-family:var(--serif);font-size:15px;margin-bottom:4px;color:#fff}
+.tip .row{display:flex;justify-content:space-between;gap:14px}
+.tip .row i{width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:5px}
+
+@media (max-width:980px){
+  .wrap{padding:0 28px}
+  .cover-main{grid-template-columns:1fr;gap:40px;align-items:start;padding:56px 0 42px}
+  .cover-number{text-align:left}
+  .cover-number .rule{background:linear-gradient(90deg,rgba(201,164,106,.55),transparent)}
+  .section-head{grid-template-columns:1fr;gap:26px}
+  .risk-grid{grid-template-columns:1fr}
+  .verdict-grid{grid-template-columns:1fr}
+  .v-col{border-right:none;border-bottom:1px solid var(--line);padding:26px 0}
+  .stat-strip{grid-template-columns:1fr}
+  .stat{border-right:none;border-bottom:1px solid var(--line);padding:22px 0}
+  .race-row{grid-template-columns:110px 1fr 88px;gap:12px}
+  .race-meta{grid-column:2/4;text-align:left;display:flex;gap:12px}
+  .race-meta b{display:inline}
+  .verdicts{grid-template-columns:1fr 1fr}
+  .method{grid-template-columns:1fr;gap:4px}
+  .sources{grid-template-columns:1fr}
+  .db-row,.db-axis,.real-row{grid-template-columns:100px 1fr 76px;gap:12px}
+  .slider-box{grid-template-columns:1fr;gap:18px}
+  .equiv{text-align:left}
+  .equiv .n{margin-left:0}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  .section{padding:74px 0}
+  .cover{padding:26px 0 24px}
+  .cover-top .right{display:none}
+  .cover-bottom{align-items:flex-start}
+  .cover-bottom .fine{text-align:left}
+  .race-row{grid-template-columns:1fr auto;gap:6px 12px;padding:16px 0}
+  .race-name{grid-column:1;grid-row:1}
+  .race-val{grid-column:2;grid-row:1;font-size:20px}
+  .race-track{grid-column:1/3;grid-row:2;margin-top:6px}
+  .race-meta{grid-column:1/3;grid-row:3;display:flex;gap:12px;text-align:left;margin-top:2px}
+  .race-meta b{display:inline}
+  .verdicts{grid-template-columns:1fr}
+  .db-row{grid-template-columns:1fr auto;gap:4px 12px;padding:14px 0}
+  .db-name{grid-column:1;grid-row:1}
+  .db-val{grid-column:2;grid-row:1;text-align:right}
+  .db-track{grid-column:1/3;grid-row:2;margin-top:6px}
+  .db-axis{grid-template-columns:1fr;gap:0}
+  .db-axis .ticks{padding-left:0}
+  .real-row{grid-template-columns:1fr auto;gap:4px 12px;padding:13px 0}
+  .real-name{grid-column:1;grid-row:1}
+  .real-val{grid-column:2;grid-row:1}
+  .real-track{grid-column:1/3;grid-row:2;margin-top:6px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+@media print{
+  #progress,.toggle,.slider-box{display:none}
+  .section{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- ================= COVER ================= -->
+<header class="cover">
+  <div class="wrap">
+    <div class="cover-top">
+      <div class="left">
+        <div class="mark"></div>
+        <div class="eyebrow">Policy review &nbsp;·&nbsp; No. 07</div>
+      </div>
+      <div class="right">Prepared 6 November 2026<br>Fifteen-year review</div>
+    </div>
+
+    <div class="cover-main">
+      <div>
+        <h1>The Quiet<br><em>Fifteen</em></h1>
+        <p class="deck">A guaranteed savings policy paid out ₹19,34,520 on 6 November 2026. This is what the seven premiums became, and what the same cheques would have become in a fixed deposit, bonds, the Nifty 50, or gold.</p>
+      </div>
+      <div class="cover-number">
+        <div class="kicker">Maturity proceeds</div>
+        <div class="big num"><span class="cur">₹</span>19,34,520</div>
+        <div class="caption">Credited 6 November 2026 · ICICI Pru Guaranteed Savings Insurance Plan</div>
+        <div class="rule"></div>
+      </div>
+    </div>
+
+    <div class="cover-bottom">
+      <div class="chips">
+        <div class="chip"><b>2.26×</b> premiums</div>
+        <div class="chip"><b>6.96%</b> XIRR</div>
+        <div class="chip"><b>0%</b> tax</div>
+      </div>
+      <div class="fine">A money-weighted, after-tax comparison<br>Fixed deposit · Bonds · Nifty 50 · Gold</div>
+    </div>
+  </div>
+
+  <svg class="cover-curve" viewBox="0 0 700 420" fill="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="cg" x1="0" y1="420" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#C9A46A" stop-opacity="0"/>
+        <stop offset=".55" stop-color="#C9A46A" stop-opacity=".55"/>
+        <stop offset="1" stop-color="#E0C89B" stop-opacity="1"/>
+      </linearGradient>
+    </defs>
+    <path d="M0 380 C 90 372, 140 360, 210 330 S 300 300, 360 250 S 450 210, 500 150 S 590 90, 700 20" stroke="url(#cg)" stroke-width="1.6"/>
+    <path d="M0 400 C 100 396, 170 388, 240 370 S 340 350, 410 310 S 510 270, 570 210 S 640 140, 700 70" stroke="#C9A46A" stroke-opacity=".28" stroke-width="1"/>
+    <circle cx="700" cy="20" r="3.4" fill="#E0C89B"/>
+  </svg>
+</header>
+
+<!-- ================= 01 THE CHEQUE ================= -->
+<section class="section" id="s1">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="n">01</span><span class="r"></span><span class="t">The cheque</span></div>
+    <div class="section-head">
+      <h2 class="reveal">Seven premiums, one cheque,<br>6.96% a year.</h2>
+      <div class="aside reveal d1">
+        <p>Seven annual premiums of ₹1,22,067 went out between 2011 and 2017. One cheque for ₹19,34,520 came back on 6 November 2026.</p>
+      </div>
+    </div>
+
+    <div class="body reveal d1">
+      <p>The gain is <strong>₹10,80,054</strong>, or <strong>2.26 times</strong> the money paid in. The multiple is easy to read but misleading on its own, because the premiums went out over seven years. Measured across the actual dates, the policy compounded at <strong>6.96% a year</strong>. It was issued before April 2012, and the base annual premium of ₹1.20L was 14.3% of the ₹8.40L sum assured. That is inside the 20% limit, so the maturity is <strong>tax-free</strong> under Section 10(10D).</p>
+      <p>At a 30% tax slab, a tax-free 6.96% is equivalent to a <strong>9.94% taxable return</strong>. That is the right yardstick for the bank comparison: the policy beat the fixed deposit after tax. It roughly matched a 10% bond and did not beat equity or gold.</p>
+    </div>
+
+    <div class="stat-strip reveal d2">
+      <div class="stat">
+        <div class="k">Paid in</div>
+        <div class="v num">₹8.54<span class="u">L</span></div>
+        <div class="n">Seven premiums of ₹1,22,067</div>
+      </div>
+      <div class="stat">
+        <div class="k">Earned</div>
+        <div class="v num">₹10.80<span class="u">L</span></div>
+        <div class="n">The difference between premiums and maturity</div>
+      </div>
+      <div class="stat">
+        <div class="k">Received</div>
+        <div class="v num">₹19.35<span class="u">L</span></div>
+        <div class="n">2.26× your premiums · 6.96% XIRR</div>
+      </div>
+    </div>
+
+    <div class="timeline-wrap reveal d2">
+      <div class="chart-shell">
+        <div class="chart-head">
+          <div class="chart-title">The cash-flow shape · 2011 to 2026</div>
+          <div class="legend"><span><i class="swatch" style="background:var(--gold)"></i>One maturity cheque</span><span><i class="swatch" style="background:var(--terra)"></i>Seven premiums</span></div>
+        </div>
+        <div id="timeline"></div>
+        <div class="caption">Seven premiums, nine years with no cash flow, and one payment. The timing explains why 6.96% is lower than the simple 2.26× multiple suggests.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 THE RACE ================= -->
+<section class="section" id="s2" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="n">02</span><span class="r"></span><span class="t">The race</span></div>
+    <div class="section-head">
+      <h2 class="reveal">The same seven cheques,<br>sent to five places.</h2>
+      <div class="aside reveal d1">
+        <p>Each alternative receives ₹1,22,067 on 6 November of every year from 2011 to 2017, and is marked to market on 6 November 2026.</p>
+      </div>
+    </div>
+
+    <div class="body reveal d1">
+      <p>The comparison is mechanical: the same cash flows on the same dates, with no attempt to time entry or exit. The fixed deposit is a one-year deposit renewed every November at the rate available then, which matches the rhythm of the premiums. The bars show after-tax value at a 30% slab. Fixed deposits and bonds are taxed every year at your slab, equity and gold at 12.5% long-term capital gains on exit, and the policy at zero.</p>
+    </div>
+
+    <div class="chart-shell reveal d2" style="margin-top:38px">
+      <div class="chart-head">
+        <div class="chart-title">Value on 6 November 2026</div>
+        <div class="toggle" id="basisToggle">
+          <button data-basis="post" class="on">In hand · after tax</button>
+          <button data-basis="pre">Before tax</button>
+        </div>
+      </div>
+      <div class="race" id="raceRows"></div>
+      <div class="race-note">
+        <div class="small" id="raceRank"></div>
+        <div class="small">Multiple = value ÷ ₹8.54L premiums · IRR = money-weighted annual return</div>
+      </div>
+    </div>
+
+    <div class="verdicts reveal d3">
+      <div class="v-card win" id="chip-fd"><div class="k">vs fixed deposit</div><div class="v">Ahead by ₹4.43L</div></div>
+      <div class="v-card level" id="chip-bond"><div class="k">vs bonds</div><div class="v">Level</div></div>
+      <div class="v-card loss" id="chip-nifty"><div class="k">vs Nifty 50</div><div class="v">Behind by ₹11.84L</div></div>
+      <div class="v-card loss" id="chip-gold"><div class="k">vs gold</div><div class="v">Behind by ₹16.81L</div></div>
+    </div>
+
+    <div class="caption reveal d3">The fixed deposit uses the 1-year bank FD rate at each renewal: 9.00% in 2011, 5.50% in 2020, 6.25% in 2026. Gold's total is boosted by the 2025-26 rally, and equity's by the 2023-26 run. Neither is a forecast. The policy figure was fixed at inception.</div>
+  </div>
+</section>
+
+<!-- ================= 03 THE PATH ================= -->
+<section class="section" id="s3">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="n">03</span><span class="r"></span><span class="t">The path</span></div>
+    <div class="section-head">
+      <h2 class="reveal">The policy never had<br>a bad year.</h2>
+      <div class="aside reveal d1">
+        <p>It also never had an exceptional year. The chart shows what that cost.</p>
+      </div>
+    </div>
+
+    <div class="body reveal d1">
+      <p>Equity and gold had a harder ride: a flat 2011-2013, the 2013 taper tantrum, the 2020 crash, and the 2022 rate shock. The policy line barely moves. That stability is what the product sold, and the gap between it and the market lines is what it cost.</p>
+    </div>
+
+    <div class="chart-shell reveal d2" style="margin-top:34px">
+      <div class="chart-head">
+        <div class="chart-title">Portfolio value · before exit tax</div>
+        <div class="legend">
+          <span><i class="swatch" style="background:var(--green)"></i>Your policy</span>
+          <span><i class="swatch" style="background:var(--terra)"></i>Nifty 50</span>
+          <span><i class="swatch" style="background:var(--gold)"></i>Gold</span>
+          <span><i class="swatch" style="background:var(--blue)"></i>Fixed deposit</span>
+          <span><i class="swatch" style="background:var(--sage)"></i>Bonds</span>
+        </div>
+      </div>
+      <div id="pathChart" style="position:relative"></div>
+      <div class="caption">The policy line shows the guaranteed value accruing at 6.96%. Market lines are index or price marks. Tax is on the next page. Hover for yearly values on a desktop.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 THE TAX LENS ================= -->
+<section class="section" id="s4" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="n">04</span><span class="r"></span><span class="t">The tax lens</span></div>
+    <div class="section-head">
+      <h2 class="reveal">A tax-free 6.96%<br>is not a taxable 6.96%.</h2>
+      <div class="aside reveal d1">
+        <p>Tax decides how much of the return you keep. The policy was an EEE product: exempt on the way in, on the way up, and on the way out.</p>
+      </div>
+    </div>
+
+    <div class="body reveal d1">
+      <p>At a 30% slab, the fixed deposit's 6.74% return becomes 4.71% after tax. A 10% bond becomes 7.00%, a hair above the policy. At 35%, the bond falls to 6.50% and the policy is ahead. The policy beats the fixed deposit at every slab. Its 6.96% is already net, equivalent to 9.94% taxable.</p>
+    </div>
+
+    <div class="chart-shell reveal d2" style="margin-top:34px">
+      <div class="chart-head">
+        <div class="chart-title">What you keep · before vs after tax</div>
+        <div class="legend"><span><i class="swatch" style="width:9px;height:9px;border-radius:50%;background:transparent;border:1.5px solid var(--ink-soft)"></i>Before tax</span><span><i class="swatch" style="width:9px;height:9px;border-radius:50%;background:var(--gold)"></i>After tax</span></div>
+      </div>
+      <div class="db" id="dumbbell"></div>
+      <div class="db-axis"><div></div><div class="ticks"><span>₹0</span><span>₹10L</span><span>₹20L</span><span>₹30L</span><span>₹40L</span></div><div></div></div>
+      <div class="db-legend"><span><i style="background:var(--green)"></i>Policy (already tax-free)</span><span><i style="background:var(--blue)"></i>Fixed deposit</span><span><i style="background:var(--sage)"></i>Bonds</span><span><i style="background:var(--terra)"></i>Nifty 50</span><span><i style="background:var(--gold)"></i>Gold</span></div>
+    </div>
+
+    <div class="slider-box reveal d3">
+      <div>
+        <div class="lab">Your income-tax slab</div>
+        <input type="range" id="tax" min="0" max="40" step="5" value="30" aria-label="Income tax slab">
+        <div class="slider-ends"><span>0%</span><span>20%</span><span>40%</span></div>
+      </div>
+      <div class="equiv">
+        <div class="k">Tax-free equivalent</div>
+        <div class="v num" id="equivVal">9.94%</div>
+        <div class="n">The taxable return you would need to match the policy at this slab.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 THE REAL RETURN ================= -->
+<section class="section" id="s5">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="n">05</span><span class="r"></span><span class="t">The real return</span></div>
+    <div class="section-head">
+      <h2 class="reveal">Inflation took most<br>of the nominal gain.</h2>
+      <div class="aside reveal d1">
+        <p>Between 2011 and 2026, India's consumer price index rose about 2.26 times, or 5.58% a year.</p>
+      </div>
+    </div>
+
+    <div class="body reveal d1">
+      <p>After inflation, the policy returned <strong>1.77% a year</strong>. It preserved purchasing power and added a little. The fixed deposit lost 0.36% a year in real terms, and the 10% bond returned 1.81%. Equity and gold compounded real wealth, but only for investors who could tolerate the drawdowns. The policy did the job it was bought to do: it protected capital.</p>
+    </div>
+
+    <div class="chart-shell reveal d2" style="margin-top:34px">
+      <div class="chart-head">
+        <div class="chart-title">Real annual return · after tax and inflation</div>
+        <div class="legend"><span><i class="swatch" style="background:var(--green)"></i>Positive</span><span><i class="swatch" style="background:var(--terra)"></i>Negative</span></div>
+      </div>
+      <div class="real-chart" id="realChart"></div>
+      <div class="caption">Real return = money-weighted return after tax, deflated by India's CPI (2011 = 108.91; 2026 estimate = 245.97).</div>
+    </div>
+
+    <div class="stat-strip reveal d3" style="margin-top:44px">
+      <div class="stat">
+        <div class="k">₹19.35L today, in 2011 money</div>
+        <div class="v num">₹8.57<span class="u">L</span></div>
+        <div class="n">The maturity, deflated by CPI</div>
+      </div>
+      <div class="stat">
+        <div class="k">Your premiums, in 2011 money</div>
+        <div class="v num">₹6.90<span class="u">L</span></div>
+        <div class="n">Seven cheques, discounted by CPI</div>
+      </div>
+      <div class="stat">
+        <div class="k">Real gain</div>
+        <div class="v num">₹1.66<span class="u">L</span></div>
+        <div class="n">1.77% a year, over fifteen years</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 THE PRICE OF CERTAINTY ================= -->
+<section class="section dark" id="s6">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="n">06</span><span class="r"></span><span class="t">The price of certainty</span></div>
+    <div class="section-head">
+      <h2 class="reveal">The extra return came<br>with a drawdown.</h2>
+      <div class="aside reveal d1">
+        <p>Volatility is measured from monthly returns between 2011 and 2026.</p>
+      </div>
+    </div>
+
+    <div class="body reveal d1">
+      <p>The policy had no volatility, no sequence risk, ₹8.40L of life cover, and a cheque that could not shrink. Equity and gold paid more because they asked more: 16% to 17% annual volatility, a 38% drawdown for the Nifty in 2020, and a 25% drawdown for gold in 2013-15. If you had needed the money in March 2020, the comparison would have looked different.</p>
+    </div>
+
+    <div class="risk-grid" style="margin-top:40px">
+      <div class="chart-shell reveal d2">
+        <div class="chart-head">
+          <div class="chart-title">Return vs turbulence</div>
+          <div class="legend"><span>Bubble size = final value</span></div>
+        </div>
+        <div id="scatter"></div>
+        <div class="caption" style="color:#909B93">Annualised volatility and after-tax XIRR. Equity and gold volatility from monthly returns, 2011-2026. Bond volatility assumed at 4.5%. The fixed deposit and the policy are at zero.</div>
+      </div>
+
+      <div class="reveal d2">
+        <div class="risk-cards">
+          <div class="risk-card">
+            <div class="ic">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 1.5 13 4v4c0 3.2-2.2 5.6-5 6.5-2.8-.9-5-3.3-5-6.5V4l5-2.5Z"/><path d="m5.8 8.1 1.5 1.5 3-3"/></svg>
+            </div>
+            <div><div class="k">Guaranteed</div><div class="d">The maturity was fixed at inception. Market moves and interest rates could not change it.</div></div>
+          </div>
+          <div class="risk-card">
+            <div class="ic">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 13h10M4 13V7l4-4 4 4v6"/><path d="M6.5 13V9.5h3V13"/></svg>
+            </div>
+            <div><div class="k">Tax-free</div><div class="d">Section 10(10D) made the entire cheque spendable. There was no capital-gains bill and no slab tax.</div></div>
+          </div>
+          <div class="risk-card">
+            <div class="ic">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="5.5" cy="5" r="2.2"/><path d="M1.8 13c.3-2.4 1.8-3.8 3.7-3.8S8.9 10.6 9.2 13"/><circle cx="11" cy="6" r="1.7"/><path d="M9.6 12.9c.2-1.8 1.3-2.9 2.8-2.9 1.4 0 2.3 1 2.5 2.6"/></svg>
+            </div>
+            <div><div class="k">Protected</div><div class="d">₹8.40L of life cover for fifteen years. It is a small sum, but it was part of what the premium bought.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 THE VERDICT ================= -->
+<section class="section" id="s7">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="n">07</span><span class="r"></span><span class="t">The verdict</span></div>
+    <div class="section-head">
+      <h2 class="reveal">A guaranteed 6.96%.<br>An ₹11.84 lakh gap.</h2>
+      <div class="aside reveal d1">
+        <p>The policy kept its promise. Whether that was the right promise depends on what you needed the money to do.</p>
+      </div>
+    </div>
+
+    <div class="verdict-grid">
+      <div class="v-col reveal">
+        <div class="k">What it did well</div>
+        <h3>It beat the bank.</h3>
+        <p>At a 30% slab, the fixed deposit ended ₹4.43L behind. It roughly matched a 10% bond; at a 35% slab it beat the bond. It delivered 6.96% with no volatility, added life cover, and required one decision a year.</p>
+        <ul>
+          <li>Tax-free under 10(10D)</li>
+          <li>No market or sequence risk</li>
+          <li>₹8.40L life cover</li>
+          <li>Automatic, annual saving</li>
+        </ul>
+      </div>
+      <div class="v-col reveal d1">
+        <div class="k">What it cost</div>
+        <h3>The opportunity cost.</h3>
+        <p>The Nifty ended ₹11.84L ahead after tax, and gold ended ₹16.81L ahead. The real return was 1.77% a year, and the money was locked up for fifteen years. There was no explicit fee. The cost was the lower return.</p>
+        <ul>
+          <li>1.77% real annual return</li>
+          <li>Capital locked for 15 years</li>
+          <li>No participation in India's equity compounding</li>
+          <li>Inflation absorbed most of the nominal return</li>
+        </ul>
+      </div>
+      <div class="v-col reveal d2">
+        <div class="k">What I would do with the cheque</div>
+        <h3>Split it by purpose.</h3>
+        <p>The ₹19.35L is now a liquid, tax-free lump sum. The useful question is what each part of it is for. Money you cannot afford to lose belongs in a guaranteed bucket. Money you can leave alone for a decade belongs in a diversified portfolio.</p>
+        <ul>
+          <li>3 to 5 years of spending in the guaranteed bucket</li>
+          <li>The rest in a diversified, low-cost portfolio</li>
+          <li>Do not chase gold after a fivefold rise</li>
+          <li>Remember that reinvesting the maturity starts a new tax clock</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pull reveal">The policy returned 6.96% a year and never fell. The Nifty returned 11.18% after tax and fell 38% in 2020.</div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="chapter" style="margin-bottom:30px"><span class="n">Method</span><span class="r" style="background:rgba(243,238,227,.16)"></span><span class="t">Assumptions &amp; sources</span></div>
+    <h2>How the numbers<br>were built.</h2>
+    <p class="body" style="margin-bottom:34px">Every number here can be rebuilt from the assumptions below. The comparison is a historical counterfactual, not a forecast or a recommendation.</p>
+
+    <div class="method"><div class="k">Premiums</div><div class="v">₹1,22,066.57 on 6 November of each year, 2011 to 2017. Total ₹8,54,466.</div></div>
+    <div class="method"><div class="k">Maturity</div><div class="v">₹19,34,520 received on 6 November 2026. You also reported a ₹8.40L sum assured and ₹4.36L of accrued benefit; the balance is the plan's additional guaranteed maturity value. The statement's component labels may differ. The cash figure is what is modelled.</div></div>
+    <div class="method"><div class="k">Return measure</div><div class="v">Money-weighted XIRR on actual dates, actual/365. Multiple = maturity ÷ total premiums.</div></div>
+    <div class="method"><div class="k">Fixed deposit</div><div class="v">One-year bank deposit, renewed every November at the rate available then: 9.00% (2011), 8.50% (2012), 8.75% (2013), 8.50% (2014), 8.00% (2015), 7.00% (2016), 6.50% (2017), 6.75% (2018 and 2019), 5.50% (2020), 5.10% (2021), 5.75% (2022), 6.80% (2023 and 2024), 6.50% (2025), 6.25% (2026). Interest taxed annually at the selected slab and reinvested.</div></div>
+    <div class="method"><div class="k">Bonds</div><div class="v">10% annual return, taxed at the selected slab. This is the return assumption you asked for, not a G-Sec yield path.</div></div>
+    <div class="method"><div class="k">Nifty 50</div><div class="v">Nifty 50 price index on each 6 November, 1.25% dividend yield reinvested, 0.20% annual fund cost, 12.5% LTCG on exit after the ₹1.25L exemption.</div></div>
+    <div class="method"><div class="k">Gold</div><div class="v">24K domestic price per 10g: ₹28,700 (Nov 2011) to ₹1,42,550 (6 Nov 2026), 0.50% annual ETF cost, 12.5% LTCG on exit.</div></div>
+    <div class="method"><div class="k">Inflation</div><div class="v">World Bank CPI for India (2010 = 100): 108.91 in 2011, 233.06 in 2025, 245.97 estimated for 2026. CAGR 5.58%. Real IRRs are computed on CPI-deflated cash flows.</div></div>
+    <div class="method"><div class="k">Tax</div><div class="v">30% slab by default; adjustable from 0% to 40%. Policy maturity assumed exempt under Section 10(10D): issued before April 2012, base annual premium ₹1.20L, or 14.3% of the ₹8.40L sum assured, below the 20% limit. Equity and gold at 12.5% LTCG.</div></div>
+
+    <div class="sources">
+      <span>NSE / Yahoo Finance: Nifty 50 daily closes, 2011 to 2026</span>
+      <span>World Bank: CPI for India (FP.CPI.TOTL)</span>
+      <span>MoSPI: CPI September 2026 (5.54% y/y)</span>
+      <span>SBI / Paisabazaar: 1-year FD rate cards, 2011 to 2026</span>
+      <span>Forbes India: gold rate history, 2000 to 2026</span>
+      <span>Financial Express / Economic Times: 24K gold, 6 Nov 2026</span>
+      <span>Income Tax Act: Section 10(10D); Finance Act 2024 LTCG regime</span>
+    </div>
+
+    <div class="disclaimer">This document is an educational analysis of a historical outcome. It is not investment, tax, or insurance advice. Past returns are not predictive; the gold and equity figures in particular are period-specific and flattered by exceptional runs. Tax rules depend on your residency, regime, and individual circumstances, so confirm with a qualified adviser before acting. Figures are rounded for display; the underlying model uses full precision.</div>
+
+    <div class="footer-base">
+      <span>The Quiet Fifteen · 6 November 2026</span>
+      <span>Prepared for private review</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   DATA
+   ============================================================ */
+const D = {
+  premium: 122066.57,
+  totalPremium: 854466,
+  maturity: 1934520,
+  payYears: [2011,2012,2013,2014,2015,2016,2017],
+  path: {
+    years: [2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],
+    policy:  [122067,252655,392309,541685,701460,872495,1055298,1128760,1207336,1291619,1381532,1477704,1580570,1690909,1808618,1934520],
+    fd_pre:  [122067,255151,398905,555876,725192,905439,1090886,1161794,1240215,1324166,1396995,1468242,1552666,1658546,1771327,1886464],
+    fd_post: [122067,251845,388896,534783,688669,849410,1013097,1059193,1109240,1161799,1206528,1249601,1299897,1361946,1426775,1491693],
+    bond_pre:[122067,256375,404079,566553,745275,942083,1158358,1274194,1401614,1542178,1696395,1866035,2052639,2258492,2484341,2732775],
+    bond_post:[122067,252702,392458,541996,702003,873349,1056550,1130508,1209644,1294559,1385178,1482140,1585890,1697217,1816022,1943144],
+    nifty:   [122067,255694,402596,667865,765864,948802,1301395,1324899,1521393,1575635,2345844,2376851,2573435,3280050,3453336,3424024],
+    gold:    [122067,253254,369990,444340,541003,751845,865098,919328,1139045,1455074,1387233,1578302,1804544,2222922,3448661,4009415]
+  },
+  fdRate: {2011:9.00,2012:8.50,2013:8.75,2014:8.50,2015:8.00,2016:7.00,2017:6.50,2018:6.75,2019:6.75,2020:5.50,2021:5.10,2022:5.75,2023:6.80,2024:6.80,2025:6.50,2026:6.25},
+  real: {policy:1.77, fd:-0.36, bond:1.81, nifty:5.76, gold:7.02}
+};
+
+const COLORS = {
+  policy:'#1E4438', gold:'#A97C3F', nifty:'#A9503A', fd:'#3F5A6B', bond:'#64736A'
+};
+const NAMES = {policy:'Your policy', gold:'Gold', nifty:'Nifty 50', fd:'Fixed deposit', bond:'Bonds'};
+
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+const fmt = n => '₹' + Math.round(n).toLocaleString('en-IN');
+const fmtL = n => {
+  if (Math.abs(n) >= 1e7) return '₹' + (n/1e7).toFixed(2) + ' Cr';
+  if (Math.abs(n) >= 1e5) return '₹' + (n/1e5).toFixed(2) + ' L';
+  return '₹' + Math.round(n).toLocaleString('en-IN');
+};
+const pct = n => (n*100).toFixed(2) + '%';
+const utc = (y,m,d) => Date.UTC(y,m,d);
+const T0 = utc(2011,10,6);
+
+function xirr(flows){
+  const npv = r => flows.reduce((s,[t,cf]) => s + cf / Math.pow(1+r,(t-T0)/(365*864e5)), 0);
+  let lo=-0.9, hi=2;
+  for(let i=0;i<220;i++){
+    const m=(lo+hi)/2;
+    if(npv(m)>0) lo=m; else hi=m;
+  }
+  return (lo+hi)/2;
+}
+function irrOf(v){
+  return xirr([...D.payYears.map(y=>[utc(y,10,6),-D.premium]),[utc(2026,10,6),v]]);
+}
+
+function fdValue(tax){
+  const end=utc(2026,10,6);
+  let total=0;
+  for(const y of D.payYears){
+    let v=D.premium, cur=utc(y,10,6);
+    while(cur<end){
+      const yr=new Date(cur).getUTCFullYear();
+      const r=D.fdRate[yr]/100*(1-tax);
+      let nxt=utc(yr+1,10,6);
+      if(nxt>end) nxt=end;
+      v*=Math.pow(1+r,(nxt-cur)/(365*864e5));
+      cur=nxt;
+    }
+    total+=v;
+  }
+  return total;
+}
+function bondValue(tax){
+  const end=utc(2026,10,6);
+  let total=0;
+  for(const y of D.payYears){
+    const years=(end-utc(y,10,6))/(365*864e5);
+    total+=D.premium*Math.pow(1+0.10*(1-tax),years);
+  }
+  return total;
+}
+function compute(tax){
+  const nPre=D.path.nifty[D.path.nifty.length-1];
+  const gPre=D.path.gold[D.path.gold.length-1];
+  const nPost=nPre-Math.max(0,nPre-D.totalPremium-125000)*0.125;
+  const gPost=gPre-Math.max(0,gPre-D.totalPremium)*0.125;
+  return {
+    policy:{pre:D.maturity, post:D.maturity},
+    gold:{pre:gPre, post:gPost},
+    nifty:{pre:nPre, post:nPost},
+    fd:{pre:fdValue(0), post:fdValue(tax)},
+    bond:{pre:bondValue(0), post:bondValue(tax)}
+  };
+}
+
+/* ============================================================
+   STATE
+   ============================================================ */
+const state = {tax:0.30, basis:'post'};
+</script>
+
+<script>
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+(function renderTimeline(){
+  const W=1100,H=290,L=64,R=64,axis=150;
+  const years=[2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
+  const x=i=>L+i*(W-L-R)/(years.length-1);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Cash-flow timeline: seven premiums then one maturity">`;
+  // axis
+  s+=`<line x1="${L}" x2="${W-R}" y1="${axis}" y2="${axis}" stroke="rgba(18,26,23,.18)" stroke-width="1"/>`;
+  // year ticks
+  years.forEach((y,i)=>{
+    if(i%2===0||i===years.length-1){
+      s+=`<line x1="${x(i)}" x2="${x(i)}" y1="${axis}" y2="${axis+6}" stroke="rgba(18,26,23,.18)"/>`;
+      s+=`<text x="${x(i)}" y="${axis+26}" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#7B847D" letter-spacing=".06em">${y}</text>`;
+    }
+  });
+  // premium bars
+  D.payYears.forEach((y,i)=>{
+    const xx=x(i);
+    s+=`<rect x="${xx-9}" y="${axis}" width="18" height="44" fill="rgba(169,80,58,.10)" stroke="rgba(169,80,58,.55)" stroke-width="1"/>`;
+    s+=`<text x="${xx}" y="${axis+62}" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#A9503A">−1.22</text>`;
+  });
+  // premium bracket label
+  const mid=(x(0)+x(6))/2;
+  s+=`<line x1="${x(0)}" x2="${x(6)}" y1="${axis+82}" y2="${axis+82}" stroke="rgba(169,80,58,.45)" stroke-width="1"/>`;
+  s+=`<text x="${mid}" y="${axis+100}" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#A9503A" letter-spacing=".12em">SEVEN PREMIUMS · ₹8.54L</text>`;
+  // wait bracket
+  const waitMid=(x(6)+x(15))/2;
+  s+=`<line x1="${x(6)}" x2="${x(15)}" y1="${axis+82}" y2="${axis+82}" stroke="rgba(123,132,125,.45)" stroke-width="1" stroke-dasharray="3 4"/>`;
+  s+=`<text x="${waitMid}" y="${axis+100}" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#7B847D" letter-spacing=".12em">NINE YEARS OF WAITING</text>`;
+  // maturity bar
+  const mx=x(15);
+  s+=`<rect x="${mx-26}" y="${axis-128}" width="52" height="128" fill="rgba(201,164,106,.24)" stroke="#A97C3F" stroke-width="1.2"/>`;
+  s+=`<text x="${mx}" y="${axis-144}" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="24" fill="#1E4438">₹19.35L</text>`;
+  s+=`<text x="${mx}" y="${axis-160}" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#7B847D" letter-spacing=".16em">MATURITY</text>`;
+  // dashed connector
+  s+=`<path d="M${x(6)+14} ${axis+44} C ${x(9)} ${axis+44}, ${x(12)} ${axis-40}, ${mx-30} ${axis-40}" fill="none" stroke="rgba(169,124,63,.45)" stroke-width="1" stroke-dasharray="4 5"/>`;
+  s+=`</svg>`;
+  document.getElementById('timeline').innerHTML=s;
+})();
+</script>
+
+<script>
+/* ============================================================
+   PATH CHART
+   ============================================================ */
+function renderPath(){
+  const el=document.getElementById('pathChart');
+  const mobile=window.innerWidth<620;
+  const W=mobile?680:1100, H=mobile?500:540;
+  const L=mobile?14:68, R=mobile?112:150, T=mobile?16:34, B=mobile?20:54;
+  const years=D.path.years, n=years.length;
+  const x=i=>L+i*(W-L-R)/(n-1);
+  const maxY=4200000;
+  const y=v=>H-B-(v/maxY)*(H-T-B);
+  const series=[
+    {key:'fd_pre',name:'Fixed deposit',color:COLORS.fd,w:1.9,dash:'7 5'},
+    {key:'bond_pre',name:'Bonds',color:COLORS.bond,w:1.9,dash:'2 4'},
+    {key:'gold',name:'Gold',color:COLORS.gold,w:2.4},
+    {key:'nifty',name:'Nifty 50',color:COLORS.nifty,w:2.4},
+    {key:'policy',name:'Your policy',color:COLORS.policy,w:3.4}
+  ];
+  const smooth=pts=>{
+    let d=`M${pts[0][0]},${pts[0][1]}`;
+    for(let i=0;i<pts.length-1;i++){
+      const p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||p2;
+      const c1x=p1[0]+(p2[0]-p0[0])/6, c1y=p1[1]+(p2[1]-p0[1])/6;
+      const c2x=p2[0]-(p3[0]-p1[0])/6, c2y=p2[1]-(p3[1]-p1[1])/6;
+      d+=` C${c1x},${c1y} ${c2x},${c2y} ${p2[0]},${p2[1]}`;
+    }
+    return d;
+  };
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Growth of each option, 2011 to 2026" style="width:100%;height:auto">`;
+  // premium band
+  s+=`<rect x="${x(0)}" y="${T}" width="${x(6)-x(0)}" height="${H-T-B}" fill="rgba(201,164,106,.07)"/>`;
+  if(!mobile){
+    // grid
+    for(let g=0;g<=40;g+=10){
+      const yy=y(g*100000);
+      s+=`<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="rgba(18,26,23,.09)" stroke-width="1"/>`;
+      s+=`<text x="${L-12}" y="${yy+4}" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#7B847D">${g===0?'₹0':'₹'+g+'L'}</text>`;
+    }
+    // x labels
+    years.forEach((yr,i)=>{
+      if(i%2===0||i===n-1){
+        s+=`<text x="${x(i)}" y="${H-22}" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#7B847D">${yr}</text>`;
+      }
+    });
+    // annotations
+    [ [2,'TAPER'], [9,'COVID'], [11,'RATES'] ].forEach(([i,lab])=>{
+      s+=`<line x1="${x(i)}" x2="${x(i)}" y1="${T+24}" y2="${H-B}" stroke="rgba(18,26,23,.13)" stroke-width="1" stroke-dasharray="2 5"/>`;
+      s+=`<text x="${x(i)+6}" y="${T+34}" font-family="Inter,sans-serif" font-size="9" fill="#7B847D" letter-spacing=".14em">${lab}</text>`;
+    });
+  }
+  // series
+  series.forEach(se=>{
+    const pts=D.path[se.key].map((v,i)=>[x(i),y(v)]);
+    const w=mobile?se.w+0.7:se.w;
+    s+=`<path d="${smooth(pts)}" fill="none" stroke="${se.color}" stroke-width="${w}" stroke-linecap="round" ${se.dash?`stroke-dasharray="${se.dash}"`:''} opacity=".95"/>`;
+  });
+  // end dots + labels
+  const endLabels=[
+    {key:'gold',dy:mobile?6:-12},
+    {key:'nifty',dy:mobile?22:-12},
+    {key:'policy',dy:mobile?22:-12}
+  ];
+  if(!mobile) endLabels.push({key:'bond_pre',dy:-10});
+  endLabels.forEach(({key,dy})=>{
+    const v=D.path[key][n-1], xx=x(n-1), yy=y(v);
+    const colorKey=key==='bond_pre'?'bond':key;
+    s+=`<circle cx="${xx}" cy="${yy}" r="${mobile?3.2:4}" fill="${COLORS[colorKey]}" stroke="#F3EEE3" stroke-width="1.5"/>`;
+    s+=`<text x="${xx+8}" y="${yy+dy}" font-family="Fraunces,Georgia,serif" font-size="${mobile?23:15}" fill="${COLORS[colorKey]}">${fmtL(v)}</text>`;
+  });
+  if(!mobile){
+    s+=`<rect id="pathHover" x="${L}" y="${T}" width="${W-L-R}" height="${H-T-B}" fill="transparent" style="cursor:crosshair"/>`;
+    s+=`<g id="pathCursor" style="display:none"><line y1="${T}" y2="${H-B}" stroke="rgba(18,26,23,.35)" stroke-width="1" stroke-dasharray="3 3"/><circle r="4" fill="#fff" stroke="#121A17" stroke-width="1.5"/></g>`;
+  }
+  s+=`</svg>`;
+  el.innerHTML=s;
+  if(mobile) return;
+  // hover
+  const svg=el.querySelector('svg');
+  const cursor=el.querySelector('#pathCursor');
+  const line=cursor.querySelector('line');
+  const circ=cursor.querySelector('circle');
+  const tip=document.createElement('div');
+  tip.className='tip'; el.appendChild(tip);
+  svg.addEventListener('mousemove',ev=>{
+    const rect=svg.getBoundingClientRect();
+    const px=(ev.clientX-rect.left)/rect.width*W;
+    let idx=Math.round((px-L)/((W-L-R)/(n-1)));
+    idx=Math.max(0,Math.min(n-1,idx));
+    const xx=x(idx);
+    cursor.style.display='block';
+    line.setAttribute('x1',xx); line.setAttribute('x2',xx);
+    circ.setAttribute('cx',xx); circ.setAttribute('cy',y(D.path.policy[idx]));
+    const rows=[
+      ['Your policy','policy'],['Nifty 50','nifty'],['Gold','gold'],['Fixed deposit','fd_pre'],['Bonds','bond_pre']
+    ].map(([nm,k])=>`<div class="row"><span><i style="background:${COLORS[k]}"></i>${nm}</span><b>${fmtL(D.path[k][idx])}</b></div>`).join('');
+    tip.innerHTML=`<div class="yr">${years[idx]}</div>${rows}`;
+    tip.style.opacity='1';
+    const left=(xx/W)*rect.width;
+    tip.style.left=Math.min(rect.width-190,Math.max(8,left+14))+'px';
+    tip.style.top=Math.max(8,(y(D.path.gold[idx])/H)*rect.height-20)+'px';
+  });
+  svg.addEventListener('mouseleave',()=>{cursor.style.display='none';tip.style.opacity='0';});
+}
+renderPath();
+let _rt; addEventListener('resize',()=>{clearTimeout(_rt);_rt=setTimeout(renderPath,250);});
+
+</script>
+
+<script>
+/* ============================================================
+   RACE
+   ============================================================ */
+function renderRace(){
+  const v=compute(state.tax);
+  const basis=state.basis;
+  const order=['gold','nifty','policy','fd','bond'].sort((a,b)=>v[b][basis]-v[a][basis]);
+  const max=Math.max(...order.map(k=>v[k][basis]));
+  const rows=order.map(k=>{
+    const val=v[k][basis], w=Math.max(1.2,(val/max)*100);
+    const mult=val/D.totalPremium;
+    const ir=irrOf(val)*100;
+    return `<div class="race-row ${k==='policy'?'is-policy':''}" style="--c:${COLORS[k]}">
+      <div class="race-name"><span class="dot"></span>${NAMES[k]}${k==='policy'?'<span class="race-tag">You</span>':''}</div>
+      <div class="race-track"><div class="race-bar" data-w="${w.toFixed(2)}"></div></div>
+      <div class="race-val num">${fmtL(val)}</div>
+      <div class="race-meta"><b>${mult.toFixed(2)}×</b><span>${ir.toFixed(2)}% p.a.</span></div>
+    </div>`;
+  }).join('');
+  document.getElementById('raceRows').innerHTML=rows;
+  requestAnimationFrame(()=>{
+    document.querySelectorAll('#raceRows .race-bar').forEach(b=>{b.style.width=b.dataset.w+'%';});
+  });
+  const rank=order.indexOf('policy')+1;
+  const label=state.basis==='post'?`after tax at ${Math.round(state.tax*100)}%`:'before tax';
+  document.getElementById('raceRank').innerHTML=`Your policy ranks <strong>${rank} of 5</strong> ${label}.`;
+  ['fd','bond','nifty','gold'].forEach(k=>{
+    const el=document.getElementById('chip-'+k);
+    if(!el) return;
+    const diff=v.policy[state.basis]-v[k][state.basis];
+    const level=Math.abs(diff)<25000;
+    const ahead=diff>=0;
+    el.classList.toggle('win',!level && ahead);
+    el.classList.toggle('loss',!level && !ahead);
+    el.classList.toggle('level',level);
+    const amount=(Math.abs(diff)/1e5).toFixed(2)+'L';
+    el.querySelector('.v').textContent=level?'Level':`${ahead?'Ahead':'Behind'} by ₹${amount}`;
+  });
+}
+document.getElementById('basisToggle').addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  state.basis=b.dataset.basis;
+  document.querySelectorAll('#basisToggle button').forEach(x=>x.classList.toggle('on',x===b));
+  renderRace();
+});
+</script>
+
+<script>
+/* ============================================================
+   DUMBBELL
+   ============================================================ */
+function renderDumbbell(){
+  const v=compute(state.tax);
+  const max=4200000;
+  const keys=['fd','bond','nifty','gold','policy'];
+  const rows=keys.map(k=>{
+    if(k==='policy'){
+      const p=v.policy.post/max*100;
+      return `<div class="db-row" style="--c:${COLORS.policy}">
+        <div class="db-name">${NAMES[k]}</div>
+        <div class="db-track"><div class="db-dot post" style="left:${p}%;background:${COLORS.policy};border-color:${COLORS.policy}"></div></div>
+        <div class="db-val num">${fmtL(v.policy.post)}</div>
+      </div>`;
+    }
+    const pre=v[k].pre/max*100, post=v[k].post/max*100;
+    return `<div class="db-row" style="--c:${COLORS[k]}">
+      <div class="db-name">${NAMES[k]}</div>
+      <div class="db-track">
+        <div class="db-line" style="left:${Math.min(pre,post)}%;width:${Math.abs(post-pre)}%"></div>
+        <div class="db-dot pre" style="left:${pre}%"></div>
+        <div class="db-dot post" style="left:${post}%;background:${COLORS[k]};border-color:${COLORS[k]}"></div>
+      </div>
+      <div class="db-val num">${fmtL(v[k].post)}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('dumbbell').innerHTML=rows;
+  const eq=6.96/(1-state.tax);
+  document.getElementById('equivVal').textContent=eq.toFixed(2)+'%';
+}
+</script>
+
+<script>
+/* ============================================================
+   REAL RETURNS
+   ============================================================ */
+(function renderReal(){
+  const items=[
+    {k:'gold',v:D.real.gold},{k:'nifty',v:D.real.nifty},{k:'policy',v:D.real.policy},
+    {k:'fd',v:D.real.fd},{k:'bond',v:D.real.bond}
+  ];
+  const MIN=-2,MAX=8;
+  const pos=v=>(v-MIN)/(MAX-MIN)*100;
+  const zero=pos(0);
+  const rows=items.map(it=>{
+    const p=pos(it.v), left=Math.min(zero,p), width=Math.max(0.35,Math.abs(p-zero));
+    const color=it.v>=0? (it.k==='policy'?COLORS.policy:COLORS.gold) : COLORS.terra;
+    return `<div class="real-row" style="--c:${color}">
+      <div class="real-name">${NAMES[it.k]}</div>
+      <div class="real-track"><div class="real-zero" style="left:${zero}%"></div><div class="real-bar" style="left:${left}%;width:${width}%;background:${color}"></div></div>
+      <div class="real-val num">${it.v>0?'+':''}${it.v.toFixed(2)}%</div>
+    </div>`;
+  }).join('');
+  // axis
+  const axis=`<div class="real-row" style="border-bottom:none;padding-top:4px">
+    <div></div>
+    <div class="real-track" style="height:14px;background:transparent;position:relative">
+      ${[-2,0,2,4,6,8].map(t=>`<span style="position:absolute;left:${pos(t)}%;transform:translateX(-50%);font-size:10px;color:var(--muted)">${t}%</span>`).join('')}
+    </div><div></div></div>`;
+  document.getElementById('realChart').innerHTML=rows+axis;
+})();
+</script>
+
+<script>
+/* ============================================================
+   SCATTER
+   ============================================================ */
+function renderScatter(){
+  const v=compute(state.tax);
+  const mobile=window.innerWidth<620;
+  const W=mobile?680:760, H=mobile?520:470, L=mobile?30:62, R=26, T=mobile?34:26, B=mobile?34:58;
+  const xMax=20,yMax=14;
+  const x=v=>L+(v/xMax)*(W-L-R);
+  const y=v=>H-B-(v/yMax)*(H-T-B);
+  const pts=[
+    {k:'policy',vol:0,val:v.policy.post},
+    {k:'fd',vol:0,val:v.fd.post},
+    {k:'bond',vol:4.5,val:v.bond.post},
+    {k:'nifty',vol:16,val:v.nifty.post},
+    {k:'gold',vol:17,val:v.gold.post}
+  ].map(p=>({...p,irr:irrOf(p.val)*100}));
+  const maxVal=Math.max(...pts.map(p=>p.val));
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Risk versus return scatter" style="width:100%;height:auto">`;
+  if(!mobile){
+    // grid
+    for(let g=0;g<=yMax;g+=3){
+      s+=`<line x1="${L}" x2="${W-R}" y1="${y(g)}" y2="${y(g)}" stroke="rgba(243,238,227,.10)"/>`;
+      s+=`<text x="${L-10}" y="${y(g)+4}" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#8F9A92">${g}%</text>`;
+    }
+    for(let g=0;g<=xMax;g+=5){
+      s+=`<line x1="${x(g)}" x2="${x(g)}" y1="${T}" y2="${H-B}" stroke="rgba(243,238,227,.07)"/>`;
+      s+=`<text x="${x(g)}" y="${H-B+20}" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8F9A92">${g}%</text>`;
+    }
+    // axis labels
+    s+=`<text x="${(L+W-R)/2}" y="${H-14}" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8F9A92" letter-spacing=".18em">ANNUALISED VOLATILITY</text>`;
+    s+=`<text x="16" y="${(T+H-B)/2}" text-anchor="middle" transform="rotate(-90 16 ${(T+H-B)/2})" font-family="Inter,sans-serif" font-size="9" fill="#8F9A92" letter-spacing=".18em">AFTER-TAX XIRR</text>`;
+    // policy vertical marker
+    s+=`<line x1="${x(0)}" x2="${x(0)}" y1="${T}" y2="${H-B}" stroke="rgba(201,164,106,.25)" stroke-dasharray="3 4"/>`;
+  }
+  // dots
+  pts.forEach(p=>{
+    const r=mobile?10+(p.val/maxVal)*18:7+(p.val/maxVal)*13;
+    s+=`<circle cx="${x(p.vol)}" cy="${y(p.irr)}" r="${r}" fill="${COLORS[p.k]}" fill-opacity="${p.k==='policy'?.22:.14}" stroke="${COLORS[p.k]}" stroke-width="${p.k==='policy'?2:1.2}"/>`;
+    s+=`<circle cx="${x(p.vol)}" cy="${y(p.irr)}" r="${mobile?3:2.6}" fill="${p.k==='policy'?'#E0C89B':COLORS[p.k]}"/>`;
+  });
+  // labels
+  const labels=mobile?{
+    policy:{dx:18,dy:-18,anchor:'start'},
+    fd:{dx:18,dy:24,anchor:'start'},
+    bond:{dx:22,dy:28,anchor:'start'},
+    nifty:{dx:-12,dy:28,anchor:'end'},
+    gold:{dx:18,dy:-10,anchor:'start'}
+  }:{
+    policy:{dx:16,dy:4,anchor:'start'},
+    fd:{dx:14,dy:18,anchor:'start'},
+    bond:{dx:14,dy:18,anchor:'start'},
+    nifty:{dx:-10,dy:24,anchor:'end'},
+    gold:{dx:0,dy:-34,anchor:'middle'}
+  };
+  pts.forEach(p=>{
+    const l=labels[p.k];
+    s+=`<text x="${x(p.vol)+l.dx}" y="${y(p.irr)+l.dy}" text-anchor="${l.anchor}" font-family="Fraunces,Georgia,serif" font-size="${mobile?24:14}" fill="${p.k==='policy'?'#E0C89B':'#E9E3D6'}">${NAMES[p.k]}</text>`;
+    if(!mobile) s+=`<text x="${x(p.vol)+l.dx}" y="${y(p.irr)+l.dy+14}" text-anchor="${l.anchor}" font-family="Inter,sans-serif" font-size="9" fill="#8F9A92">${p.irr.toFixed(2)}% · ${fmtL(p.val)}</text>`;
+  });
+  if(mobile){
+    s+=`<text x="${W-R}" y="${H-8}" text-anchor="end" font-family="Inter,sans-serif" font-size="13" fill="#8F9A92" letter-spacing=".12em">RISK →</text>`;
+    s+=`<text x="10" y="20" font-family="Inter,sans-serif" font-size="13" fill="#8F9A92" letter-spacing=".12em">RETURN ↑</text>`;
+  } else {
+    s+=`<text x="${x(1)}" y="${y(12.9)}" font-family="Inter,sans-serif" font-size="9" fill="#8F9A92" letter-spacing=".12em">MORE RETURN, MORE TURBULENCE</text>`;
+  }
+  s+=`</svg>`;
+  document.getElementById('scatter').innerHTML=s;
+}
+</script>
+
+<script>
+/* ============================================================
+   EVENTS + INIT
+   ============================================================ */
+document.getElementById('tax').addEventListener('input',e=>{
+  state.tax=+e.target.value/100;
+  renderDumbbell();
+  renderRace();
+  renderScatter();
+});
+renderRace();
+renderDumbbell();
+renderScatter();
+let _rst; addEventListener('resize',()=>{clearTimeout(_rst);_rst=setTimeout(renderScatter,250);});
+
+/* reveal */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* progress */
+addEventListener('scroll',()=>{
+  const h=document.documentElement;
+  const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+  document.getElementById('progress').style.width=p+'%';
+},{passive:true});
+</script>
+</body>
+</html>
